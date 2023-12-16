@@ -37,7 +37,8 @@ const PORT = process.env.PORT;
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "https://talkative-chatapp.vercel.app",
+    origin: "https://talkative-app.netlify.app/chats",
+    // origin: "https://talkative-chatapp.vercel.app",
     // credentials: true,
   },
 });
